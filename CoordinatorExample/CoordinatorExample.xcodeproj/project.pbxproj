@@ -8,20 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		C72A4FD12268D33A0073AF2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FD02268D33A0073AF2A /* AppDelegate.swift */; };
-		C72A4FD32268D33A0073AF2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FD22268D33A0073AF2A /* ViewController.swift */; };
-		C72A4FD62268D33A0073AF2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72A4FD42268D33A0073AF2A /* Main.storyboard */; };
 		C72A4FD82268D33B0073AF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72A4FD72268D33B0073AF2A /* Assets.xcassets */; };
 		C72A4FDB2268D33B0073AF2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72A4FD92268D33B0073AF2A /* LaunchScreen.storyboard */; };
+		C72A50092268D4110073AF2A /* SongsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FE62268D4110073AF2A /* SongsViewModel.swift */; };
+		C72A500B2268D4110073AF2A /* SongsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FE92268D4110073AF2A /* SongsCoordinator.swift */; };
+		C72A500C2268D4110073AF2A /* SongsCoordinatorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FEA2268D4110073AF2A /* SongsCoordinatorOutputProtocol.swift */; };
+		C72A500D2268D4110073AF2A /* SongsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FEC2268D4110073AF2A /* SongsViewProtocol.swift */; };
+		C72A500E2268D4110073AF2A /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FED2268D4110073AF2A /* SongsViewController.swift */; };
+		C72A500F2268D4110073AF2A /* SongsModulesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FEE2268D4110073AF2A /* SongsModulesFactoryProtocol.swift */; };
+		C72A50102268D4110073AF2A /* SongsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FEF2268D4110073AF2A /* SongsAssembly.swift */; };
+		C72A50112268D4110073AF2A /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF22268D4110073AF2A /* HomeViewModelProtocol.swift */; };
+		C72A50122268D4110073AF2A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF32268D4110073AF2A /* HomeViewModel.swift */; };
+		C72A50132268D4110073AF2A /* HomeModulesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF42268D4110073AF2A /* HomeModulesFactoryProtocol.swift */; };
+		C72A50142268D4110073AF2A /* HomeCoordinatorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF62268D4110073AF2A /* HomeCoordinatorOutputProtocol.swift */; };
+		C72A50152268D4110073AF2A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF72268D4110073AF2A /* HomeCoordinator.swift */; };
+		C72A50162268D4110073AF2A /* HomeAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FF82268D4110073AF2A /* HomeAssemble.swift */; };
+		C72A50172268D4110073AF2A /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FFA2268D4110073AF2A /* HomeViewProtocol.swift */; };
+		C72A50182268D4110073AF2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FFB2268D4110073AF2A /* HomeViewController.swift */; };
+		C72A50192268D4110073AF2A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FFC2268D4110073AF2A /* AppCoordinator.swift */; };
+		C72A501A2268D4110073AF2A /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FFD2268D4110073AF2A /* ModulesFactory.swift */; };
+		C72A501B2268D4110073AF2A /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A4FFF2268D4110073AF2A /* CoordinatorFactoryProtocol.swift */; };
+		C72A501C2268D4110073AF2A /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50002268D4110073AF2A /* CoordinatorFactory.swift */; };
+		C72A501D2268D4110073AF2A /* TabsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50012268D4110073AF2A /* TabsCoordinator.swift */; };
+		C72A501F2268D4110073AF2A /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50032268D4110073AF2A /* UIViewController+extension.swift */; };
+		C72A50202268D4110073AF2A /* PresentableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50042268D4110073AF2A /* PresentableProtocols.swift */; };
+		C72A50212268D4110073AF2A /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50052268D4110073AF2A /* BaseCoordinator.swift */; };
+		C72A50222268D4110073AF2A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50072268D4110073AF2A /* Router.swift */; };
+		C72A50232268D4110073AF2A /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50082268D4110073AF2A /* RouterProtocol.swift */; };
+		C72A50292268D4890073AF2A /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50262268D4890073AF2A /* TabModel.swift */; };
+		C72A502C2268D51C0073AF2A /* TabsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A502B2268D51C0073AF2A /* TabsRouter.swift */; };
+		C72A502E2268D52D0073AF2A /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A502D2268D52D0073AF2A /* NavigationRouter.swift */; };
+		C72A50312268DC4C0073AF2A /* TabsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50302268DC4C0073AF2A /* TabsFactory.swift */; };
+		C72A50342268DCAB0073AF2A /* CoordinateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50332268DCAB0073AF2A /* CoordinateProtocols.swift */; };
+		C72A50372268DEB30073AF2A /* SongsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A50362268DEB30073AF2A /* SongsViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C72A4FCD2268D33A0073AF2A /* CoordinatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72A4FD02268D33A0073AF2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C72A4FD22268D33A0073AF2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C72A4FD52268D33A0073AF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C72A4FD72268D33B0073AF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C72A4FDA2268D33B0073AF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C72A4FDC2268D33B0073AF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C72A4FE62268D4110073AF2A /* SongsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewModel.swift; sourceTree = "<group>"; };
+		C72A4FE92268D4110073AF2A /* SongsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsCoordinator.swift; sourceTree = "<group>"; };
+		C72A4FEA2268D4110073AF2A /* SongsCoordinatorOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsCoordinatorOutputProtocol.swift; sourceTree = "<group>"; };
+		C72A4FEC2268D4110073AF2A /* SongsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewProtocol.swift; sourceTree = "<group>"; };
+		C72A4FED2268D4110073AF2A /* SongsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		C72A4FEE2268D4110073AF2A /* SongsModulesFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsModulesFactoryProtocol.swift; sourceTree = "<group>"; };
+		C72A4FEF2268D4110073AF2A /* SongsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsAssembly.swift; sourceTree = "<group>"; };
+		C72A4FF22268D4110073AF2A /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		C72A4FF32268D4110073AF2A /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C72A4FF42268D4110073AF2A /* HomeModulesFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulesFactoryProtocol.swift; sourceTree = "<group>"; };
+		C72A4FF62268D4110073AF2A /* HomeCoordinatorOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorOutputProtocol.swift; sourceTree = "<group>"; };
+		C72A4FF72268D4110073AF2A /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		C72A4FF82268D4110073AF2A /* HomeAssemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAssemble.swift; sourceTree = "<group>"; };
+		C72A4FFA2268D4110073AF2A /* HomeViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		C72A4FFB2268D4110073AF2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C72A4FFC2268D4110073AF2A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C72A4FFD2268D4110073AF2A /* ModulesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		C72A4FFF2268D4110073AF2A /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		C72A50002268D4110073AF2A /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		C72A50012268D4110073AF2A /* TabsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsCoordinator.swift; sourceTree = "<group>"; };
+		C72A50032268D4110073AF2A /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		C72A50042268D4110073AF2A /* PresentableProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentableProtocols.swift; sourceTree = "<group>"; };
+		C72A50052268D4110073AF2A /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C72A50072268D4110073AF2A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C72A50082268D4110073AF2A /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		C72A50262268D4890073AF2A /* TabModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		C72A502B2268D51C0073AF2A /* TabsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsRouter.swift; sourceTree = "<group>"; };
+		C72A502D2268D52D0073AF2A /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		C72A50302268DC4C0073AF2A /* TabsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsFactory.swift; sourceTree = "<group>"; };
+		C72A50332268DCAB0073AF2A /* CoordinateProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateProtocols.swift; sourceTree = "<group>"; };
+		C72A50362268DEB30073AF2A /* SongsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +113,154 @@
 			isa = PBXGroup;
 			children = (
 				C72A4FD02268D33A0073AF2A /* AppDelegate.swift */,
-				C72A4FD22268D33A0073AF2A /* ViewController.swift */,
-				C72A4FD42268D33A0073AF2A /* Main.storyboard */,
+				C72A50042268D4110073AF2A /* PresentableProtocols.swift */,
+				C72A50352268DCBE0073AF2A /* BaseCoordinator */,
+				C72A50322268DC710073AF2A /* Tabs */,
+				C72A50062268D4110073AF2A /* Router */,
+				C72A4FFE2268D4110073AF2A /* Factory */,
+				C72A4FE32268D4110073AF2A /* Modules */,
+				C72A502F2268D69E0073AF2A /* Extensions */,
 				C72A4FD72268D33B0073AF2A /* Assets.xcassets */,
 				C72A4FD92268D33B0073AF2A /* LaunchScreen.storyboard */,
 				C72A4FDC2268D33B0073AF2A /* Info.plist */,
 			);
 			path = CoordinatorExample;
+			sourceTree = "<group>";
+		};
+		C72A4FE32268D4110073AF2A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FFC2268D4110073AF2A /* AppCoordinator.swift */,
+				C72A4FFD2268D4110073AF2A /* ModulesFactory.swift */,
+				C72A4FE42268D4110073AF2A /* Songs */,
+				C72A4FF02268D4110073AF2A /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C72A4FE42268D4110073AF2A /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FE52268D4110073AF2A /* ViewModel */,
+				C72A4FE82268D4110073AF2A /* Coordinator */,
+				C72A4FEB2268D4110073AF2A /* View */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		C72A4FE52268D4110073AF2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FE62268D4110073AF2A /* SongsViewModel.swift */,
+				C72A50362268DEB30073AF2A /* SongsViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C72A4FE82268D4110073AF2A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FE92268D4110073AF2A /* SongsCoordinator.swift */,
+				C72A4FEA2268D4110073AF2A /* SongsCoordinatorOutputProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C72A4FEB2268D4110073AF2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FEE2268D4110073AF2A /* SongsModulesFactoryProtocol.swift */,
+				C72A4FEF2268D4110073AF2A /* SongsAssembly.swift */,
+				C72A4FEC2268D4110073AF2A /* SongsViewProtocol.swift */,
+				C72A4FED2268D4110073AF2A /* SongsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C72A4FF02268D4110073AF2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FF12268D4110073AF2A /* ViewModel */,
+				C72A4FF52268D4110073AF2A /* Coordinator */,
+				C72A4FF92268D4110073AF2A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C72A4FF12268D4110073AF2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FF22268D4110073AF2A /* HomeViewModelProtocol.swift */,
+				C72A4FF32268D4110073AF2A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C72A4FF52268D4110073AF2A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FF62268D4110073AF2A /* HomeCoordinatorOutputProtocol.swift */,
+				C72A4FF72268D4110073AF2A /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C72A4FF92268D4110073AF2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FF42268D4110073AF2A /* HomeModulesFactoryProtocol.swift */,
+				C72A4FF82268D4110073AF2A /* HomeAssemble.swift */,
+				C72A4FFA2268D4110073AF2A /* HomeViewProtocol.swift */,
+				C72A4FFB2268D4110073AF2A /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C72A4FFE2268D4110073AF2A /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C72A4FFF2268D4110073AF2A /* CoordinatorFactoryProtocol.swift */,
+				C72A50002268D4110073AF2A /* CoordinatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		C72A50062268D4110073AF2A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C72A50072268D4110073AF2A /* Router.swift */,
+				C72A502B2268D51C0073AF2A /* TabsRouter.swift */,
+				C72A502D2268D52D0073AF2A /* NavigationRouter.swift */,
+				C72A50082268D4110073AF2A /* RouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C72A502F2268D69E0073AF2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C72A50032268D4110073AF2A /* UIViewController+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C72A50322268DC710073AF2A /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				C72A50262268D4890073AF2A /* TabModel.swift */,
+				C72A50012268D4110073AF2A /* TabsCoordinator.swift */,
+				C72A50302268DC4C0073AF2A /* TabsFactory.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		C72A50352268DCBE0073AF2A /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C72A50052268D4110073AF2A /* BaseCoordinator.swift */,
+				C72A50332268DCAB0073AF2A /* CoordinateProtocols.swift */,
+			);
+			path = BaseCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +323,6 @@
 			files = (
 				C72A4FDB2268D33B0073AF2A /* LaunchScreen.storyboard in Resources */,
 				C72A4FD82268D33B0073AF2A /* Assets.xcassets in Resources */,
-				C72A4FD62268D33A0073AF2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +333,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72A4FD32268D33A0073AF2A /* ViewController.swift in Sources */,
+				C72A50092268D4110073AF2A /* SongsViewModel.swift in Sources */,
+				C72A50122268D4110073AF2A /* HomeViewModel.swift in Sources */,
+				C72A502E2268D52D0073AF2A /* NavigationRouter.swift in Sources */,
+				C72A500C2268D4110073AF2A /* SongsCoordinatorOutputProtocol.swift in Sources */,
+				C72A50182268D4110073AF2A /* HomeViewController.swift in Sources */,
+				C72A50222268D4110073AF2A /* Router.swift in Sources */,
+				C72A50202268D4110073AF2A /* PresentableProtocols.swift in Sources */,
+				C72A50102268D4110073AF2A /* SongsAssembly.swift in Sources */,
+				C72A50292268D4890073AF2A /* TabModel.swift in Sources */,
+				C72A50342268DCAB0073AF2A /* CoordinateProtocols.swift in Sources */,
+				C72A50192268D4110073AF2A /* AppCoordinator.swift in Sources */,
+				C72A501F2268D4110073AF2A /* UIViewController+extension.swift in Sources */,
+				C72A50152268D4110073AF2A /* HomeCoordinator.swift in Sources */,
+				C72A500F2268D4110073AF2A /* SongsModulesFactoryProtocol.swift in Sources */,
+				C72A501C2268D4110073AF2A /* CoordinatorFactory.swift in Sources */,
+				C72A502C2268D51C0073AF2A /* TabsRouter.swift in Sources */,
+				C72A50172268D4110073AF2A /* HomeViewProtocol.swift in Sources */,
+				C72A50142268D4110073AF2A /* HomeCoordinatorOutputProtocol.swift in Sources */,
+				C72A50212268D4110073AF2A /* BaseCoordinator.swift in Sources */,
+				C72A50112268D4110073AF2A /* HomeViewModelProtocol.swift in Sources */,
 				C72A4FD12268D33A0073AF2A /* AppDelegate.swift in Sources */,
+				C72A500B2268D4110073AF2A /* SongsCoordinator.swift in Sources */,
+				C72A500D2268D4110073AF2A /* SongsViewProtocol.swift in Sources */,
+				C72A501D2268D4110073AF2A /* TabsCoordinator.swift in Sources */,
+				C72A50232268D4110073AF2A /* RouterProtocol.swift in Sources */,
+				C72A50132268D4110073AF2A /* HomeModulesFactoryProtocol.swift in Sources */,
+				C72A501A2268D4110073AF2A /* ModulesFactory.swift in Sources */,
+				C72A50312268DC4C0073AF2A /* TabsFactory.swift in Sources */,
+				C72A50162268D4110073AF2A /* HomeAssemble.swift in Sources */,
+				C72A501B2268D4110073AF2A /* CoordinatorFactoryProtocol.swift in Sources */,
+				C72A500E2268D4110073AF2A /* SongsViewController.swift in Sources */,
+				C72A50372268DEB30073AF2A /* SongsViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C72A4FD42268D33A0073AF2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C72A4FD52268D33A0073AF2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C72A4FD92268D33B0073AF2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ8948VJT6;
 				INFOPLIST_FILE = CoordinatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ8948VJT6;
 				INFOPLIST_FILE = CoordinatorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

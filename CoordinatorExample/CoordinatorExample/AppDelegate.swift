@@ -12,10 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    lazy var appCoordinator: CoordinateProtocol = makeAppCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        appCoordinator.start()
         return true
     }
 
@@ -44,3 +44,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+private extension AppDelegate {
+    private func makeAppCoordinator() -> CoordinateProtocol {
+        let rootVC = UITabBarController()
+        setupWindow(with: rootVC)
+        
+        return AppCoodinator(
+            factory: CoordinatorFactory(),
+            router: TabsRouter(with: rootVC)
+        )
+    }
+    
+    private func setupWindow(with rootController: UIViewController) {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = rootController
+    }
+}
